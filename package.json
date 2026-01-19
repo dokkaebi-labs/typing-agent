@@ -1,0 +1,43 @@
+{
+  "name": "coding-agent-lab",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "03-first-chat",
+    "04-tool-definition",
+    "05-read-file-tool",
+    "06-tool-execution",
+    "07-tool-result",
+    "08-agent-loop-intro",
+    "09-agent-loop-impl",
+    "10-vercel-sdk-high-level",
+    "11-list-files-tool",
+    "12-edit-file-tool",
+    "13-checkpoint",
+    "14-bash-tool",
+    "15-code-search-tool",
+    "16-coding-agent-class",
+    "17-stateless-limit",
+    "18-session-management",
+    "19-session-clear",
+    "20-context-window",
+    "21-history-compression",
+    "22-agent-memory",
+    "23-cli-wrapper",
+    "24-tool-logging",
+    "25-complete"
+  ],
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.3.0",
+    "vitest": "^4.0.0"
+  },
+  "overrides": {
+    "diff": "^8.0.3"
+  }
+}
