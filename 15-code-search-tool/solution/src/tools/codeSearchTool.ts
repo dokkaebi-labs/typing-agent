@@ -52,6 +52,7 @@ export const codeSearchTool = tool({
       '--with-filename', // 파일명 표시
       '--color=never', // 컬러 코드 제거 (중요!)
       '--no-heading', // 파일별 그룹화 안 함
+      '--no-ignore', // .gitignore 무시 (자체 제외 패턴 사용)
     ];
 
     // 제외 패턴 추가 (git 저장소가 아닌 경우를 대비)

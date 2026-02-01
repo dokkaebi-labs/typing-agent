@@ -5,6 +5,12 @@
  * 모든 UI 컴포넌트와 명령어를 통합하는 진입점입니다.
  */
 
+import dotenv from 'dotenv';
+import path from 'path';
+
+dotenv.config({ path: path.resolve(process.cwd(), '.env') });
+dotenv.config({ path: path.resolve(process.cwd(), '../.env') });
+
 import * as readline from 'readline';
 // TODO 1: CodingAgent import
 // import { CodingAgent } from './coding-agent';

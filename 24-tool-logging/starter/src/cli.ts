@@ -3,6 +3,12 @@
  * 23강: CLI 진입점 (완성 코드)
  */
 
+import dotenv from 'dotenv';
+import path from 'path';
+
+dotenv.config({ path: path.resolve(process.cwd(), '.env') });
+dotenv.config({ path: path.resolve(process.cwd(), '../.env') });
+
 import * as readline from 'readline';
 import { CodingAgent } from './coding-agent';
 import { CommandRegistry } from './commands/command';
