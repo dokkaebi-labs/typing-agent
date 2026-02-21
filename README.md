@@ -20,12 +20,12 @@ cp .env.example .env
 # .env 파일에 ANTHROPIC_API_KEY 설정
 
 # 3. 실행 (루트에서)
-npx tsx 05-read-file-tool/starter/src/index.ts   # starter 코드 실행
-npx tsx 05-read-file-tool/solution/src/index.ts  # solution 코드 실행
+npx tsx 03-read-file-tool/starter/src/index.ts   # starter 코드 실행
+npx tsx 03-read-file-tool/solution/src/index.ts  # solution 코드 실행
 
 # 4. 테스트 (루트에서)
 npm test                          # 전체 테스트
-npm test -- 05-read-file-tool     # 특정 강의 테스트
+npm test -- 03-read-file-tool     # 특정 강의 테스트
 ```
 
 ## 폴더 구조
@@ -39,29 +39,20 @@ XX-폴더명/
 
 ## 강의 목록
 
-| 강의 | 폴더 |
-|-----|------|
-| 2강 | 02-setup |
-| 3강 | 03-first-chat |
-| 4강 | 04-tool-definition |
-| 5강 | 05-read-file-tool |
-| 6강 | 06-tool-execution |
-| 7강 | 07-tool-result |
-| 8강 | 08-agent-loop-intro |
-| 9강 | 09-agent-loop-impl |
-| 10강 | 10-vercel-sdk-high-level |
-| 11강 | 11-list-files-tool |
-| 12강 | 12-edit-file-tool |
-| 13강 | 13-checkpoint |
-| 14강 | 14-bash-tool |
-| 15강 | 15-code-search-tool |
-| 16강 | 16-coding-agent-class |
-| 17강 | 17-stateless-limit |
-| 18강 | 18-session-management |
-| 19강 | 19-session-clear |
-| 20강 | 20-context-window |
-| 21강 | 21-history-compression |
-| 22강 | 22-agent-memory |
-| 23강 | 23-cli-wrapper |
-| 24강 | 24-tool-logging |
-| 25강 | 25-complete |
+| 강의 | 폴더 | 설명 |
+|-----|------|------|
+| 2강 | 02-setup | 환경 설정 + 첫 번째 Chat |
+| 3강 | 03-read-file-tool | Tool 이해 + readFileTool |
+| 4강 | 04-tool-execution | JSON 파싱과 Tool 라우팅 |
+| 5강 | 05-tool-result | Tool 결과의 흐름 |
+| 6강 | 06-agent-loop | Agent Loop 구현 |
+| 7강 | 07-vercel-sdk | Vercel AI SDK 고수준 전환 |
+| 8강 | 08-file-tools | listFiles + editFile |
+| 9강 | 09-system-tools | bash + codeSearch |
+| 10강 | 10-coding-agent-class | CodingAgent 클래스 |
+| 11강 | 11-session-management | Stateless 문제 + Session |
+| 12강 | 12-session-clear | Session 초기화 |
+| 13강 | 13-context-optimization | Sliding Window + Compression |
+| 14강 | 14-agent-memory | AgentMemory |
+| 15강 | 15-cli-tool-logging | CLI + Tool 로깅 |
+| 16강 | 16-complete | 완성 |
