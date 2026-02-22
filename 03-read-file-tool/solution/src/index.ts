@@ -10,6 +10,7 @@ async function main() {
     tools: {
       readFile: readFileTool,
     },
+    toolChoice: "required"
   });
 
   console.log('toolCalls:', JSON.stringify(response.toolCalls, null, 2));
